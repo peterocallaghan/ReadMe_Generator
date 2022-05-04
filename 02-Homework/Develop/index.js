@@ -62,7 +62,7 @@ inquirer
         message: 'Please enter your github:',
       },
   ])
-  // write file containg answers
+  // write markdown file containing answers from prompt
   .then((response) => {
     return fs.writeFileSync(path.join (process.cwd(), "README.md"), generateMarkdown(response));
   });
