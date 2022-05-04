@@ -1,4 +1,4 @@
-
+// conditional statement so user to choose license/s or skip
 function licenseBadge(data) {
   const licenseType = data.license[0];
   let licenseString = " "

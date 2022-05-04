@@ -1,12 +1,13 @@
-// TODO: Include packages needed for this application
+//initializing function
 function init(){
 
+ // Include packages needed for this application
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 
-// Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+// array of questions that will display in terminal
 inquirer
   .prompt([
     {
@@ -36,6 +37,11 @@ inquirer
     },
     {
       type: 'input',
+      name: 'test',
+      message: 'Have you tested your app?',
+    },
+    {
+      type: 'input',
       name: 'contributions',
       message: 'How do you make contributions?',
     },
@@ -56,6 +62,7 @@ inquirer
         message: 'Please enter your github:',
       },
   ])
+  // write file containg answers
   .then((response) => {
     return fs.writeFileSync(path.join (process.cwd(), "README.md"), generateMarkdown(response));
   });
