@@ -13,13 +13,7 @@ In this app you will able to generate README.md file by following prompts in the
 The app is targeted for professional developers or students who loathe or struggle with writing README.md files.
 ## Instruction
 Open up your terminal and type 'node index.js' and follow the prompts. Please ensure you have inquirer installed.
-## Report Issues
-
-## Contributions
-
-## License
- 
-## GitHub
-
+## Comments
+Please note that both collaborators are my github accounts. I'm having issues with configurating my new account into my terminal.
 ## E-mail
 peter.ocallaghan23@outlook.com
